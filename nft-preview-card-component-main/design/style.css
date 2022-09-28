@@ -1,0 +1,114 @@
+/* ============= CSS RULES ============= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ============= COLORS ============= */
+:root {
+    --softblue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    --veryDarkBlue1: hsl(217, 54%, 11%);
+    --veryDarkBlue2: hsl(216, 50%, 16%);
+    --veryDarkBlue3: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+/* ============= MAIN ============= */
+html {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--veryDarkBlue1);
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    background-color: var(--veryDarkBlue2);
+    box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.50);
+    width: 355px;
+    height: 603px;
+    padding: 20px;
+    border-radius: 14px;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.text h2 {
+    color: var(--white);
+    margin-top: 20px;
+}
+
+.text p {
+    color: var(--softblue);
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.info {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.info img {
+    margin-right: 5px;
+}
+
+.info span {
+    text-align: center;
+}
+
+.ethereum, .time {
+    display: flex;
+    align-items: center;
+}
+
+.info .ethereum p{
+    color: var(--cyan);
+    font-weight: 600;
+}
+
+.info .time p {
+    color: var(--softblue);
+}
+
+.line {
+    background-color: var(--softblue);
+    height: 1px;
+    width: 100%;
+    margin-top: 28px;
+}
+
+.signature {
+    display: flex;
+    align-items: center;
+    margin-top: 17px;
+}
+
+.signature img {
+    width: 30px;
+    border-radius: 50%;
+    background-color: white;
+    padding: 1px;
+    margin-right: 12px;
+}
+
+.signature p {
+    color: var(--softblue);
+}
+
+.signature span {
+    color: var(--white);
+}
